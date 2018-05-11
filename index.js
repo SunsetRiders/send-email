@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 const fs = require('fs');
 const config = require('./config');
 
-const templateToSend = 'example.html';
+const templateToSend = 'directory_prolongation_email.html';
 
 nodemailer.createTestAccount((err, acc) => {
 
@@ -18,7 +18,7 @@ nodemailer.createTestAccount((err, acc) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Luiz" <lgm.ferrari@gmail.com>', // sender address
+        from: `<${config.user}>`, // sender address
         to: '<azteixeira@vmtestdrive.com>', // list of receivers
         subject: '[TESTE] Send Email', // Subject line
         text: '', // plain text body
