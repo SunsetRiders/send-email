@@ -5,3 +5,4 @@
 3. At your Gmail account, update to accept [less secure apps](https://myaccount.google.com/lesssecureapps)
 4. Put a HTML template on the 'templates' folder
 5. At the index.js configure the way that you want
+6. npm start to run
